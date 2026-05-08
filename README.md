@@ -10,7 +10,7 @@ This project is a **Pure Kotlin/JVM** environment, designed for developers to ru
 
 ## 🚀 How to Run
 Every example file in this repository is **standalone**. 
-1. Open any `.kt` file in the `flow_basics` or other directories.
+1. Open any `.kt` file in the `flow_basics`, `stateflow_use_cases`, or other directories.
 2. Click the green **"Play"** icon next to the `fun main()` function.
 3. View the results directly in the IDE terminal.
 
@@ -18,7 +18,8 @@ Every example file in this repository is **standalone**.
 
 ## What This Project Covers
 - **Flow Basics**: Understanding Cold Flows, Producers, and Consumers.
-- **StateFlow & SharedFlow**: (Coming Soon) Hot flows for State Management and Events.
+- **StateFlow**: Hot flows for State Management.
+- **SharedFlow**: (Coming Soon) Hot flows for Events.
 - **Operators**: (Coming Soon) Transforming, Filtering, and Buffering data.
 
 ---
@@ -27,8 +28,9 @@ Every example file in this repository is **standalone**.
 Follow this order to master Kotlin Flows:
 
 1.  **[Flow Basics](./kotlinflows/src/main/kotlin/com/example/kotlinflows/flow_basics/README.md)**: Start here to understand Cold Flows, emitters, and collectors.
-2.  **Intermediate Operators**: (Coming Soon) Learn how to transform and combine data.
-3.  **StateFlow & SharedFlow**: (Coming Soon) Master Hot Flows for UI and Events.
+2.  **[StateFlow](./kotlinflows/src/main/kotlin/com/example/kotlinflows/stateflow_use_cases/README.md)**: Master Hot Flows for UI State Management.
+3.  **Intermediate Operators**: (Coming Soon) Learn how to transform and combine data.
+4.  **SharedFlow**: (Coming Soon) Master Hot Flows for one-time Events.
 
 ---
 
@@ -37,11 +39,12 @@ Follow this order to master Kotlin Flows:
 ```text
 kotlin-flow-use-cases/
 │
-├── kotlinflows/           # Main Kotlin Module
+├── kotlinflows/             # Main Kotlin Module
 │   └── src/main/kotlin/com/example/kotlinflows/
-│       ├── flow_basics/   # 📍 Start Here: Cold Flow Fundamentals
-│       ├── core/          # Shared models and utilities
-│       └── flow_operators/# (Coming Soon) Intermediate techniques
+│       ├── flow_basics/     # 📍 Start Here: Cold Flow Fundamentals
+│       ├── stateflow_use_cases/# ⚡ State Management
+│       ├── core/            # Shared models and utilities
+│       └── flow_operators/  # (Coming Soon) Intermediate techniques
 │
 └── README.md
 ```
