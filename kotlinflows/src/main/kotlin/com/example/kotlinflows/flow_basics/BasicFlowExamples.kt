@@ -1,5 +1,6 @@
 package com.example.kotlinflows.flow_basics
 
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
@@ -28,6 +29,16 @@ fun simpleNameFlow(): Flow<String> = flow {
     emit("Kotlin Flow learning")
 }
 
+// Example showing that flows can emit values over time with delays.
+fun delayedNumberFlow(): Flow<Int> = flow {
+    emit(100)
+    delay(1000) // Suspend for 1 second
+    emit(200)
+    delay(1000)
+    emit(300)
+}
+
+
 /**
  * Why runBlocking?
  * In a standalone Kotlin file, the main() thread would exit immediately.
@@ -46,5 +57,10 @@ fun main() = runBlocking {
     println("\n--- Simple Name Flow ---")
     simpleNameFlow().collect { name ->
         println("Received: $name")
+    }
+    
+    println("\n--- Delayed Number Flow (Watch the timing) ---")
+    delayedNumberFlow().collect { number -> 
+        println("Received after delay: $number") 
     }
 }
