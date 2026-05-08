@@ -23,6 +23,15 @@ Every example file in this repository is **standalone**.
 
 ---
 
+## 🗺️ Learning Path
+Follow this order to master Kotlin Flows:
+
+1.  **[Flow Basics](./kotlinflows/src/main/kotlin/com/example/kotlinflows/flow_basics/README.md)**: Start here to understand Cold Flows, emitters, and collectors.
+2.  **Intermediate Operators**: (Coming Soon) Learn how to transform and combine data.
+3.  **StateFlow & SharedFlow**: (Coming Soon) Master Hot Flows for UI and Events.
+
+---
+
 ## Project Structure
 
 ```text

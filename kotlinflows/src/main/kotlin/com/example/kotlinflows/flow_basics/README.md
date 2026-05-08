@@ -40,6 +40,13 @@ When should you use a simple `Flow` in a real app?
 
 ---
 
+## 📚 Official Documentation
+For a deeper dive into the theory, check out the official resources:
+- [Kotlin Flow Official Guide](https://kotlinlang.org/docs/flow.html)
+- [Android Developers: Kotlin Flow on Android](https://developer.android.com/kotlin/flow)
+
+---
+
 ## 🚦 Summary: How it works
 1. **Producer**: The `flow { ... }` block that `emit()`s values.
 2. **Intermediary**: Operators like `.map` that change the data.
